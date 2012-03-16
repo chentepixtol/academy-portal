@@ -1,0 +1,11 @@
+inicioSuccess:
+  metas:
+    title: Academia de Computación de Esime - Zona de Alumnos
+
+indexSuccess:
+  metas:
+    robots:  noindex, nofollow
+
+verificaSuccess:
+  metas:
+    robots:  noindex, nofollow

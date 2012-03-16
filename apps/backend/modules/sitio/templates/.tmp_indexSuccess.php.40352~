@@ -1,0 +1,89 @@
+
+<style type="text/css">
+    #tabla {
+        float: left;
+    } #show_elemento {
+    	padding: 20px;
+		margin: 20px;
+		margin-left: 300px;
+		background-color: #f9fab7;
+		opacity: 0.8;
+    } #foot {
+        clear: both;
+    }
+</style>
+
+<script type="text/javascript" language="JavaScript">
+    $(document).ready(function(){
+	
+		buttons_ver = $('a.ajax');
+    	$.each(buttons_ver,function(){
+			$(this).bind("click",function(){
+				$('div#cargar').load(this.href);
+				return false;
+			});
+		});
+		
+		buttons_borrar =  $('a.borrar');
+		$.each(buttons_borrar, function()
+		{
+			$(this).bind("click", function(){
+				$.ajax({ url: this.href });
+				$('tr#'+this.id).remove();
+				return false;
+			});
+		});
+		
+    });
+	 
+</script>
+
+<?php slot('pagetitle','Sitio Personal')?>
+
+<div id="tabla">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Titulo
+                </th>
+				<th>
+					Orden
+				</th>
+                <th>
+                    Fecha
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($sitio_list as $i => $sitio): ?>
+            <tr id="<?php echo $sitio->getId()?>">
+                <td>
+                    <a class="ajax" href="<?php echo url_for('sitio/show?id='.$sitio->getId()) ?>">
+                        <?php echo $sitio->getTitulo() ?>
+                    </a>
+                </td>
+				<td>
+					<?php echo $sitio->getOrden() ?>
+				</td>
+                <td>
+                    <?php echo $sitio->getFecha() ?>
+                </td>
+                <td>
+                    <a href="<?php echo url_for('sitio/edit?id=' . $sitio->getId())?>">Editar</a>
+                </td>
+                <td>
+                    <a href="<?php echo url_for('sitio/delete?id=' . $sitio->getId())?>" class="borrar" id="<?php echo $sitio->getId()?>" >Borrar</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <a href="<?php echo url_for('sitio/new') ?>">Nuevo</a>
+</div>
+
+<div id='show_elemento'><div id='cargar'></div></div>
+
+<div id="foot">
+
+</div>

@@ -1,0 +1,148 @@
+Pregunta:
+  Pregunta_1:
+    pregunta: '¿ El profesor falto a clases ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_2:
+    pregunta: '¿ El profesor fue puntual ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_3:
+    pregunta: ' ¿ El profesor fue ordenado al dar su clase ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_4:
+    pregunta: '¿ El profesor fue explícito al dar su clase ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_5:
+    pregunta: '¿ El profesor mostró dominio en su materia ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_6:
+    pregunta: '¿ El profesor aclaro dudas y preguntas en su clase ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_7:
+    pregunta: ' ¿ El profesor dio asesoría de teoría (y laboratorio) ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_8:
+    pregunta: '¿ El profesor dio al inicio del curso el temario o programa del estudio oficial ?'
+    respuesta_1: Todo
+    respuesta_2: Muchos
+    respuesta_3: Regular
+    respuesta_4: Pocos
+    respuesta_5: Nunca
+  Pregunta_9:
+    pregunta: '¿ El profesor repartió los temas del curso para que los expusieran los alumnos ?'
+    respuesta_1: Todos
+    respuesta_2: Muchos
+    respuesta_3: Regular
+    respuesta_4: Pocos
+    respuesta_5: Nunca
+  Pregunta_10:
+    pregunta: '¿ El profesor fue justo en la evaluación de exámenes ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_11:
+    pregunta: '¿ El profesor cubrió el programa de estudio oficial ?'
+    respuesta_1: Todo
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nada
+  Pregunta_12:
+    pregunta: '¿ El profesor cubrió los objetivos de los temas del programa de estudio ?'
+    respuesta_1: Todos
+    respuesta_2: Muchos
+    respuesta_3: Regular
+    respuesta_4: Pocos
+    respuesta_5: Nunca
+  Pregunta_13:
+    pregunta: '¿ El profesor dio el nivel de profundidad que exige el programa de estudio ?'
+    respuesta_1: Alto
+    respuesta_2: Propio
+    respuesta_3: Regular
+    respuesta_4: Bajo
+    respuesta_5: Nunca
+  Pregunta_14:
+    pregunta: '¿ Cuánto cree que aprendió de la materia ?'
+    respuesta_1: Todo
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nada
+  Pregunta_15:
+    pregunta: ' ¿ El profesor le hizo interesarse por la materia ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_16:
+    pregunta: '¿ Le gustaría cursar otra materia con el profesor ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_17:
+    pregunta: ' ¿ Cree que la calificación le fue regalada por ineficiencia del profesor ?'
+    respuesta_1: 'No'
+    respuesta_2: 'Fue justa'
+    respuesta_3: Medio
+    respuesta_4: Poco
+    respuesta_5: Si
+  Pregunta_18:
+    pregunta: '¿ El profesor actuó honestamente en el curso ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: 'No'
+  Pregunta_19:
+    pregunta: '¿ El curso del profesor le fue tedioso ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_20:
+    pregunta: ' ¿ Le agrado el contenido de la materia ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca
+  Pregunta_21:
+    pregunta: '¿ El profesor consultaba continuamente el libro o notas mostrando no haber preparado la clase ?'
+    respuesta_1: Siempre
+    respuesta_2: Mucho
+    respuesta_3: Regular
+    respuesta_4: Poco
+    respuesta_5: Nunca

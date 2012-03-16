@@ -1,0 +1,28 @@
+<h1>Sitio Personal</h1>
+<div>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Texto</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($sitio_list as $sitio): ?>
+    <tr>
+      <td><a href="<?php echo url_for('sitio/show?id='.$sitio->getId()) ?>"> <?php echo $sitio->getTitulo() ?> </a> </td>
+      <td><?php echo $sitio->getTexto() ?></td>
+      <td><?php echo $sitio->getFecha() ?></td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
+</div>
+<div>
+
+</div>
+</div>
+<br />
+<a href="<?php echo url_for('sitio/new') ?>">Nuevo</a>

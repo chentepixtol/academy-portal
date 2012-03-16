@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE database SYSTEM "database.dtd">
+<database name="propel" package="lib.model" defaultIdMethod="native" noXsd="true">
+	
+  <table name="sf_guard_user_profile" idMethod="native" phpName="Perfil">
+    <column name="id" type="INTEGER" required="true" primaryKey="true" autoIncrement="true" />
+	<column name="user_id" type="INTEGER" required="true" />
+	<column name="nombre" type="VARCHAR" size="30" />
+    <column name="apellido_paterno" type="VARCHAR" size="30" />
+    <column name="apellido_materno" type="VARCHAR" size="30" />
+	<column name="email" type="VARCHAR" size="100" />
+    <column name="telefono" type="INTEGER" />
+    <column name="extension_1" type="INTEGER" />
+    <column name="extension_2" type="INTEGER" />
+    <column name="movil" type="BIGINT" />
+    <column name="estancia" type="VARCHAR" size="30" />
+    <column name="horario" type="VARCHAR" size="30" />
+    <column name="foto" type="VARCHAR" size="150" />
+	<column name="enlace" type="VARCHAR" size="50" />
+	  <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="user_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+		
+  <table name="aviso" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="titulo" type="VARCHAR" size="150" />
+    <column name="texto" type="LONGVARCHAR" />
+	<column name="activo" type="BOOLEAN" />
+    <column name="fecha" type="DATE" />
+	<column name="slug" type="VARCHAR" size="150" />
+  </table>
+
+	
+  <table name="banner" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="titulo" type="VARCHAR" size="50" />
+	<column name="descripcion" type="VARCHAR" size="255" />
+    <column name="texto" type="LONGVARCHAR" />
+    <column name="fecha" type="DATE" />
+  </table>
+
+	
+  <table name="clave" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="clave" type="VARCHAR" size="20" required="true" />
+  </table>
+	
+	
+  <table name="materia" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="nombre" type="VARCHAR" size="255" />
+	<column name="slug" type="VARCHAR" size="255" />
+  </table>
+
+	
+  <table name="materia_profesor" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="profesor_id" type="INTEGER" required="true"  />
+    <column name="materia_id" type="INTEGER" required="true"  />
+      <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+      <foreign-key foreignTable="materia" onDelete="cascade">
+		  <reference local="materia_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+	
+  <table name="proyecto" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="profesor_id" type="INTEGER" required="true"  />
+    <column name="titulo" type="VARCHAR" size="100" required="true"  />
+    <column name="descripcion" type="LONGVARCHAR" />
+    <column name="fecha" type="DATE" />
+	<column name="slug" type="VARCHAR" size="255" />
+      <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+	
+  <table name="pregunta" idMethod="native">
+	  <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+	  <column name="pregunta" type="VARCHAR" size="255" />
+	  <column name="respuesta_1" type="VARCHAR" size="50" />
+	  <column name="respuesta_2" type="VARCHAR" size="50" />
+	  <column name="respuesta_3" type="VARCHAR" size="50" />
+	  <column name="respuesta_4" type="VARCHAR" size="50" />
+	  <column name="respuesta_5" type="VARCHAR" size="50" />
+  </table>
+
+	
+  <table name="sitio" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="profesor_id" type="INTEGER" required="true"  />
+    <column name="titulo" type="VARCHAR" size="50" />
+    <column name="texto" type="LONGVARCHAR" />
+	<column name="orden" type="INTEGER"  />
+    <column name="fecha" type="DATE" />
+       <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+	
+  <table name="video" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="profesor_id" type="INTEGER" required="true"  />
+    <column name="titulo" type="VARCHAR" size="100" />
+	<column name="url" type="VARCHAR" size="255" />
+    <column name="fecha" type="DATE" />
+	<column name="slug" type="VARCHAR" size="100" />
+       <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+	
+  <table name="wiki" idMethod="native">
+    <column name="id" type="INTEGER" required="true" autoIncrement="true" primaryKey="true" />
+    <column name="materia_id" type="INTEGER"  required="true"  />
+    <column name="profesor_id" type="INTEGER" required="true"  />
+    <column name="titulo" type="VARCHAR" size="150" />
+    <column name="texto" type="LONGVARCHAR" />
+    <column name="fecha" type="DATE" />
+       <foreign-key foreignTable="materia" onDelete="cascade">
+		  <reference local="materia_id" foreign="id"/>
+	  </foreign-key>
+       <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+  </table>
+
+	
+  <table name="evaluacion" idMethod="native">
+	  <column name="id" primaryKey="true" autoIncrement="true" type="INTEGER" required="true" />
+	  <column name="profesor_id" required="true" type="INTEGER" />
+	  <column name="pregunta_id" type="INTEGER" required="true" />
+	  <column name="num_resp_1" type="INTEGER" />
+	  <column name="num_resp_2" type="INTEGER" />
+	  <column name="num_resp_3" type="INTEGER" />
+	  <column name="num_resp_4" type="INTEGER" />
+	  <column name="num_resp_5" type="INTEGER" />
+	  <foreign-key foreignTable="sf_guard_user" onDelete="cascade">
+		  <reference local="profesor_id" foreign="id"/>
+	  </foreign-key>
+	  <foreign-key foreignTable="pregunta" onDelete="cascade">
+		  <reference local="pregunta_id" foreign="id"/>
+	  </foreign-key>
+  </table>	
+	
+	
+  <table name="alumno" idMethod="native">
+	  <column name="id" autoIncrement="true" primaryKey="true" type="INTEGER" required="true" />
+	  <column name="username" type="VARCHAR" size="40" required="true" />
+	  <column name="password" type="VARCHAR" size="40" required="true" />
+	  <column name="email" type="VARCHAR" size="150" required="true" />
+	  <column name="nombre" type="VARCHAR" size="50" />
+	  <column name="apellido_paterno" type="VARCHAR" size="50" />
+	  <column name="apellido_materno" type="VARCHAR" size="50" />
+	  <column name="boleta" type="VARCHAR" size="10" /> 
+	  <unique>
+		  <unique-column name="username" />
+	  </unique>
+  </table>
+
+	
+</database>

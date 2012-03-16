@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Pregunta
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pregunta
+    with_propel_route:     1
+    css:                   generator
+
+    config:
+      actions:
+        _new:             { label: Nuevo }
+        _edit:            { label: Editar }
+        _save:            { label: Guardar }
+        _save_and_add:    { label: Guardar y Agregar }
+        _list:            { label: Regresar }
+        _delete:          { label: Borrar }
+      fields:  ~
+      list:    
+        title:            Evaluación de Profesores
+      filter:  
+        class:            false
+      form:    ~
+      edit:    
+        title:            Editando "%%pregunta%%"
+      new:     
+        title:            Nueva Pregunta

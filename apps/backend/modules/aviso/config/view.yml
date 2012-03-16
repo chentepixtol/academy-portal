@@ -1,0 +1,8 @@
+indexSuccess:
+  javascripts: [ jquery.min.js ]
+
+newSuccess:
+  javascripts: [ tiny_mce/tiny_mce.js, tiny_mce/tiny_conf.js ]
+
+editSuccess:
+  javascripts: [ tiny_mce/tiny_mce.js, tiny_mce/tiny_conf.js ] 

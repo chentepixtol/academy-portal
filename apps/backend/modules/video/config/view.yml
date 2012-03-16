@@ -1,0 +1,8 @@
+all:
+  stylesheets: [ module.css ]
+
+newSuccess:
+  javascripts: [ tiny_mce/form-ajax.js ]
+
+editSuccess:
+  javascripts: [ tiny_mce/form-ajax.js ]

@@ -1,0 +1,6 @@
+indexSuccess:
+  metas:
+    title:     Academia de Computación de Esime - Videos Academicos
+
+showSuccess:
+  javascripts: [ flowplayer/flowplayer-3.0.3.min.js ]

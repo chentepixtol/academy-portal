@@ -1,0 +1,67 @@
+<style type="text/css">
+    #tabla {
+        float: left;
+    } #show_elemento {
+		margin-left: 700px;
+    } #foot {
+        clear: both;
+    }
+</style>
+<script type="text/javascript" language="JavaScript">
+    $(document).ready(function(){
+        num = $('a.ajax').length;
+        for (i = 0; i <= num; i++) {
+            $('a#elem' + i).bind("click", function(){
+				$('div#show_elemento').slideToggle();
+                $('div#cargar').load(this.href);
+				$('div#show_elemento').slideToggle();
+				return false;
+            });
+        }
+    });
+</script>
+<h1>Sitio Personal</h1>
+<div id="tabla">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Titulo
+                </th>
+                <th>
+                    Fecha
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($sitio_list as $i => $sitio): ?>
+            <tr>
+                <td>
+                    <a class="ajax" id="elem<?php echo $i+1?>" href="<?php echo url_for('sitio/show?id='.$sitio->getId()) ?>">
+                        <?php echo $sitio->getTitulo() ?>
+                    </a>
+                </td>
+                <td>
+                    <?php echo $sitio->getFecha() ?>
+                </td>
+                <td>
+                    <a href="<?php echo url_for('sitio/edit?id=' . $sitio->getId())?>">Editar</a>
+                </td>
+                <td>
+                    <a href="<?php echo url_for('sitio/delete?id=' . $sitio->getId())?>">Borrar</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <a href="<?php echo url_for('sitio/new') ?>">Nuevo</a>
+</div>
+<div id="show_elemento">
+    <div id="cargar">
+        container
+    </div>
+</div>
+<div id="foot">
+    <br/>
+    Creado por ChentePixtol
+</div>

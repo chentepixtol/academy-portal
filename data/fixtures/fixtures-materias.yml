@@ -1,0 +1,46 @@
+Materia:
+  Materia_1:
+    nombre: 'Fundamentos de Programación'
+    slug: fundamentos-de-programacion
+  Materia_2:
+    nombre: 'Ingenieria de Software'
+    slug: ingenieria-de-software
+  Materia_3:
+    nombre: 'Programación Orientada a Objetos'
+    slug: programacion-orientada-a-objetos
+  Materia_4:
+    nombre: 'Estructuras y Bases de Datos'
+    slug: estructuras-y-bases-de-datos
+  Materia_5:
+    nombre: 'Análisis Numérico'
+    slug: analisis-numerico
+  Materia_6:
+    nombre: 'Circuitos Digitales'
+    slug: circuitos-digitales
+  Materia_7:
+    nombre: Microprocesadores
+    slug: microprocesadores
+  Materia_8:
+    nombre: 'Arquitectura de Computadoras'
+    slug: arquitectura-de-computadoras
+  Materia_9:
+    nombre: 'Desarrollo Prospectivo de Proyectos'
+    slug: desarrollo-prospectivo-de-proyectos
+  Materia_10:
+    nombre: 'Lenguajes de Internet'
+    slug: lenguajes-de-internet
+  Materia_11:
+    nombre: 'Redes Lan'
+    slug: redes-lan
+  Materia_12:
+    nombre: 'Sistemas en Tiempo Real'
+    slug: sistemas-en-tiempo-real
+  Materia_13:
+    nombre: 'Agentes Inteligentes Expertos'
+    slug: agentes-inteligentes-expertos
+  Materia_14:
+    nombre: 'Aplicaciones de Redes de Computadoras'
+    slug: aplicaciones-de-redes-de-computadoras
+  Materia_15:
+    nombre: 'Visión por Computadora'
+    slug: vision-por-computadora

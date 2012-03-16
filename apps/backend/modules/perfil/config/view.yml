@@ -1,0 +1,5 @@
+editSuccess:
+  javascripts: [ tiny_mce/form-ajax.js ]
+
+all:
+  stylesheets: [ module.css ]

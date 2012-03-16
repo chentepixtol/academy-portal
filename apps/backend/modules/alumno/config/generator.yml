@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Alumno
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          alumno
+    with_propel_route:     1
+    css:                   generator.css
+
+    config:
+      actions: 
+        _new:             { label: Nuevo }
+        _edit:            { label: Editar }
+        _save:            { label: Guardar }
+        _save_and_add:    { label: Guardar y Agregar }
+        _delete:          { label: Borrar }
+        _list:            { label: Regresar}
+      fields:  ~
+      list:
+        title:            Alumnos
+        display:          [ =id, username, nombre, apellido_paterno, boleta ]
+        max_per_page:     50
+      filter:
+        display:          [ nombre, apellido_paterno, boleta ]
+      form:    ~
+      edit:
+        title:            Editando "%%nombre%% %%apellido_paterno%%"
+      new:     
+        title:            Nuevo Alumno

@@ -1,0 +1,31 @@
+table {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.6em;
+}
+
+th {
+    font-weight: bolder;
+}
+
+thead {
+    background-color: #e7eef6;
+
+}
+
+form
+{
+	background-color: #F0F0F0;
+	width: auto;
+}
+
+
+input
+{
+	border: 1px solid #C8C8C8;
+	font-size: 1.2em;
+	padding: 2px;
+}

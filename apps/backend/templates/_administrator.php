@@ -1,0 +1,105 @@
+<!-- A.3 HEADER BOTTOM -->
+<div class="header-bottom">
+    <!-- Navigation Level 2 (Drop-down menus) -->
+    <div class="nav2">
+        <!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('aviso/index')?>">Avisos</a>
+            </li>
+        </ul>
+        <!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('claves/index')?>">Claves
+                    <!--[if IE 7]><!--></a>
+                <!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                    <li>
+                        <a href="<?php echo url_for('claves/index')?>">Mostrar</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo url_for('claves/new')?>">Generar</a>
+                    </li>
+                </ul>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+        </ul>
+		<!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('pregunta/index')?>">Evaluación</a>
+            </li>
+        </ul>
+		<!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('proyecto/index')?>">Proyectos</a>
+            </li>
+        </ul>
+	    <!-- Navigation item -->
+		<!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('sf_guard_user/index')?>">Usuarios</a>
+            </li>
+        </ul>
+	    <!-- Navigation item -->
+	    <!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('mail/index')?>">E-Mail</a>
+            </li>
+        </ul>
+	    <!-- Navigation item -->
+		<ul>
+            <li>
+                <a href="<?php echo url_for('alumno/index')?>">Alumnos</a>
+            </li>
+        </ul>
+
+        <!-- Navigation item -->
+        <ul>
+            <li>
+                <a href="<?php echo url_for('banner/index')?>">Publicidad</a>
+            </li>
+        </ul>
+	    
+        <ul>
+            <li>
+                <a href="<?php echo url_for('materia/index')?>">Materias
+                    <!--[if IE 7]><!--></a>
+                <!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                    <li>
+                        <a href="<?php echo url_for('materia/index')?>">Listar</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo url_for('materia/new')?>">Nueva</a>
+                    </li>
+                </ul>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+        </ul>
+		
+		  <!-- Navigation item -->
+        
+        <ul>
+            <li>
+                <a href="<?php echo url_for('materia_profesor/index')?>">Relación Materias
+                    <!--[if IE 7]><!--></a>
+                <!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                    <li>
+                        <a href="<?php echo url_for('materia_profesor/index')?>">Listar</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo url_for('materia_profesor/new')?>">Nueva</a>
+                    </li>
+                </ul>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+        </ul>
+		
+    </div>
+</div>

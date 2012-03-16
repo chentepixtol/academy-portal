@@ -1,0 +1,10 @@
+
+all:
+  is_secure:    on
+  credentials:  [ alumno ]
+  
+inicio:
+  is_secure:    off
+
+verifica:
+  is_secure:    off

@@ -1,0 +1,34 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Aviso
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          aviso
+    with_propel_route:     1
+    css:                   generator
+
+    config:
+      actions:
+        _new:               { label: Nuevo }
+        _save:              { label: Guardar }
+        _delete:            { label: Borrar }
+        _save_and_add:      { label: Guardar y Agregar }
+        _list:              { label: Regresar }
+        _edit:              { label: Editar }
+      fields:  
+        texto:             { help: Nota. Para accesar al navegador de archivos del Servidor el Usuario es user21a y el Password es prof_esime91 }
+      list:
+        title:             Avisos a la Comunidad 
+        display:           [=id, activo, titulo, fecha]
+        max_per_page:      20
+      filter:  
+        class:             false
+      form:    ~
+      edit:
+        title:             Editando aviso "%%titulo%%"
+      new:   
+        title:             Nuevo Aviso

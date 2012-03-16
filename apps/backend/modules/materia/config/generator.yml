@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Materia
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          materia
+    with_propel_route:     1
+    css:                   generator
+
+    config:
+      actions: 
+        _new:              { label: Nuevo }
+        _edit:             { label: Editar }
+        _delete:           { label: Borrar }
+        _save:             { label: Guardar }
+        _save_and_add:     { label: Guardar y Agregar }
+        _list:             { label: Regresar }
+      fields:  ~
+      list:
+        title:             Materias de la Academia
+      filter:  
+        class: false
+      form:    ~
+      edit:   
+        title:             Editando "%%nombre%%"
+      new:   
+        title:             Nueva Materia

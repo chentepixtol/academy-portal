@@ -1,0 +1,109 @@
+@import url(css/loading.css);
+
+html, body {
+    /*
+font-family: "Lucida Sans";
+*/
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+}
+a{
+	text-decoration:none;
+	color: rgb(16, 64, 128);
+}
+
+#top {
+	text-align: center;
+	background-image: url(images/background/top-bg2.png);
+	background-repeat: repeat-x;
+	height: 110px;
+	padding: 0px;
+	
+}
+ 
+#top img {
+	margin: 0px;
+	padding: 0px;
+}
+
+#top p{
+	text-align: left;
+	margin: 2px;
+}
+
+#top p a , #top p span{
+	font-size: 135%;
+	color: #FFF;
+	font-weight: bold;
+}
+
+#centro {
+    padding: 4px;
+	font-family: "Lucida Sans";
+	color: #555555;
+	height: 97%;
+	background: #FFF url(images/gradients/guinda2.png) 0 0 repeat-x;
+	text-align: center;
+}
+
+.tit1{
+	font-size:13px;
+	text-align:center;
+	color:#15428b;
+	padding:10px 0px 15px 0px;
+}
+.subtit1{
+	font-size:12px;
+	color:#15428b;
+	padding: 5px 5px 5px 5px;
+}
+
+.myMenu {
+	padding: 4px;
+    margin: 4px;
+}
+.myMenu p {
+	line-height: 215%;
+}
+.myMenu p a{
+	display: block;
+    min-height: 1.7em;
+    height: auto;
+    line-height: 1.7em;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color: black;
+	border-left-width: 6px;
+	border-left-style: solid;
+	border-left-color: transparent;
+    text-decoration: none;
+    color: rgb(70, 122, 167);
+	padding:2px;
+}
+.myMenu p a:hover{
+	background-color: rgb(238, 238, 238);
+	border-bottom-color: black;
+	border-left-color: black;
+	color: black;
+}
+
+.elemento{
+	padding: 10px;
+	margin: 10px;
+	background-color: #FFF;
+	opacity: 0.8;
+	filter: alpha( opacity=80 );
+}
+.tit{	
+	font-size:130%;
+	color: #104080;
+	font-weight: bold;
+}
+
+.x-border-layout-ct{
+	background-color: #FFFFFF !important;
+}

@@ -1,0 +1,15 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    keywords:     ipn, esime, zacatenco, ice, academia, computacion, portal, web, aviso, profesor, ingenieria, comunicaciones, electronica, proyectos, instituto politecnico nacional 
+    language:     es
+    robots:       index, follow
+
+  stylesheets:    [ embouteillage.css ]
+
+  javascripts:    []
+
+  has_layout:     on
+  layout:         embouteillage

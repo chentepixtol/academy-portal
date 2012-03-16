@@ -1,0 +1,34 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Proyecto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          proyecto
+    with_propel_route:     1
+    css:                   generator
+
+    config:
+      actions:
+        _new:              { label: Nuevo }
+        _edit:             { label: Editar }
+        _delete:           { label: Borrar }
+        _save:             { label: Guardar }
+        _save_and_add:     { label: Guardar y Agregar }
+        _list:             { label: Regresar }
+      fields:
+        sf_guard_user:     { label: Profesor }
+      list:
+        title:             Proyectos de Tesis
+        peer_method:       doSelectJoinAll
+        display:           [=id, titulo, sf_guard_user, fecha]
+      filter:
+        class:             false
+      form:    ~
+      edit:    
+        title:             Editando "%%titulo%%"
+      new:     
+        title:             Nuevo Proyecto

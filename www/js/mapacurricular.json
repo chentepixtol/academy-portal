@@ -1,0 +1,89 @@
+[{
+    "id": 1,
+    "text": "Primer Semestre",
+    "children": [{
+        "id": 11,
+        "text": "Fundamentos de Programacion",
+        "leaf": true
+    }]
+}, {
+    "id": 2,
+    "text": "Segundo Semestre",
+    "children": [{
+        "id": 21,
+        "text": "Programación orientada a objetos",
+        "leaf": true
+    }]
+}, {
+    "id": 3,
+    "text": "Tercer Semestre",
+    "children": [{
+        "id": 31,
+        "text": "Estructuras y bases de datos",
+        "leaf": true
+    }]
+}, {
+    "id": 4,
+    "text": "Cuarto Semestre",
+    "children": [{
+        "id": 41,
+        "text": "Análisis numérico",
+        "leaf": true
+    }]
+}, {
+    "id": 5,
+    "text": "Quinto Semestre",
+    "children": [{
+        "id": 51,
+        "text": "Circuitos digitales",
+        "leaf": true
+    }]
+}, {
+    "id": 6,
+    "text": "Sexto Semestre",
+    "children": [{
+        "id": 61,
+        "text": "Microprocesadores",
+        "leaf": true
+    }]
+}, {
+    "id": 8,
+    "text": "Octavo Semestre",
+    "children": [{
+        "id": 81,
+        "text": "Arquitectura de computadoras",
+        "leaf": true
+    }, {
+        "id": 82,
+        "text": "Ingeniería de software",
+        "leaf": true
+    }, {
+        "id": 83,
+        "text": "Lenguajes de internet",
+        "leaf": true
+    }, {
+        "id": 84,
+        "text": "Redes LAN",
+        "leaf": true
+    }]
+}, {
+    "id": 9,
+    "text": "Noveno Semestre",
+    "children": [{
+        "id": 91,
+        "text": "Sistemas en tiempo real",
+        "leaf": true
+    }, {
+        "id": 92,
+        "text": "Agentes inteligentes expertos",
+        "leaf": true
+    }, {
+        "id": 93,
+        "text": "Aplicaciones de redes de computadoras",
+        "leaf": true
+    }, {
+        "id": 94,
+        "text": "Visión por computadora",
+        "leaf": true
+    }]
+}]

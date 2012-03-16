@@ -1,0 +1,78 @@
+alumno:
+  class: sfPropelRouteCollection
+  options:
+    model:               Alumno
+    module:              alumno
+    prefix_path:         alumno
+    column:              id
+    with_wildcard_routes: true
+
+pregunta:
+  class: sfPropelRouteCollection
+  options:
+    model:               Pregunta
+    module:              pregunta
+    prefix_path:         pregunta
+    column:              id
+    with_wildcard_routes: true
+
+aviso:
+  class: sfPropelRouteCollection
+  options:
+    model:               Aviso
+    module:              aviso
+    prefix_path:         aviso
+    column:              id
+    with_wildcard_routes: true
+
+materia_profesor:
+  class: sfPropelRouteCollection
+  options:
+    model:               MateriaProfesor
+    module:              materia_profesor
+    prefix_path:         materia_profesor
+    column:              id
+    with_wildcard_routes: true
+
+proyecto:
+  class: sfPropelRouteCollection
+  options:
+    model:               Proyecto
+    module:              proyecto
+    prefix_path:         proyecto
+    column:              id
+    with_wildcard_routes: true
+
+materia:
+  class: sfPropelRouteCollection
+  options:
+    model:               Materia
+    module:              materia
+    prefix_path:         materia
+    column:              id
+    with_wildcard_routes: true
+
+signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+ 
+repassword:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

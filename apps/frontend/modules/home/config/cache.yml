@@ -1,0 +1,25 @@
+index:
+  enabled:     on
+
+_materias:
+  enabled:     on
+
+_profesores:
+  enabled:     on
+  lifetime:    1800
+
+_avisos:
+  enabled:     on
+  lifetime:    600
+
+vicente:
+  enabled:     on
+
+ricardo:
+  enabled:     on
+
+ares:
+  enabled:     on
+
+about:
+  enabled:     on

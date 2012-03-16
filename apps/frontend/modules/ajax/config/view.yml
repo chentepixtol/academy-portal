@@ -1,0 +1,20 @@
+indexSuccess:
+  stylesheets:   [ -* ]
+  has_layout:     on
+  layout:         layout_ajax
+
+videoSuccess:
+  stylesheets:    [ -*, playlist.css ]
+  javascripts:   [ jquery.min.js, flowplayer/flowplayer-3.0.3.min.js ]
+  has_layout:    on
+  layout:        layout
+
+proyectosSuccess:
+  stylesheets:    [ -* ]
+  javascripts:   [ RowExpander.js, proyectos.js ]
+  has_layout:    on
+  layout:        layout
+
+all:
+  metas:
+    robots:      noindex, nofollow

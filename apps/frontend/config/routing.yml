@@ -1,0 +1,69 @@
+proyectos_xml:
+  url:     /ajax/proyectos.:sf_format
+  param:   { module: ajax, action: proyectos }
+  requirements:
+    sf_format: (?:html|xml)
+
+buscar:
+  url:     /buscar
+  param:   { module: home, action: buscar }
+
+aviso:
+  url:     /aviso/:slug/:fecha
+  class:   sfPropelRoute
+  options: { model: Aviso, type: object }
+  param:   { module: aviso, action: show }
+  requirements:
+    sf_method: [ GET ] 
+
+proyecto:
+  url:     /proyecto/:slug/:fecha
+  class:   sfPropelRoute
+  options: { model: Proyecto, type: object }
+  param:   { module: proyecto, action: show }
+  requirements:
+    sf_method: [ GET ] 
+
+video:
+  url:     /video/:slug/:fecha
+  class:   sfPropelRoute
+  options: { model: Video, type: object }
+  param:   { module: video, action: show }
+  requirements:
+    sf_method: [ GET ]
+
+materia:
+  url:     /materia/:slug
+  class:   sfPropelRoute
+  options: { model: Materia, type: object }
+  param:   { module: materia, action: show }
+  requirements:
+    sf_method: [ GET ]
+
+sitio:
+  url:     /sitio/:enlace
+  class:   sfPropelRoute
+  options: { model: Perfil, type: object }
+  param:   { module: sitio, action: show }
+  requirements:
+    sf_method: [ GET ]
+
+perfil:
+  url:      /perfil/:enlace
+  class:    sfPropelRoute
+  options:  { model: Perfil, type: object }
+  param:    { module: perfil, action: show }
+  requirements:
+    sf_method: [ GET ]
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

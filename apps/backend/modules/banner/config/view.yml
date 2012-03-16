@@ -1,0 +1,5 @@
+all:
+  stylesheets: [ module.css ]
+
+editSuccess:
+  javascripts: [ tiny_mce/tiny_mce.js, tiny_mce/tiny_conf.js ]

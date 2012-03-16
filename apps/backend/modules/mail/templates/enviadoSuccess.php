@@ -1,0 +1,1 @@
+<?php slot('pagetitle','Mensaje Enviado Correctamente')?>

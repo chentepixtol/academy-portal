@@ -1,0 +1,48 @@
+sfGuardUser:
+  sfGuardUser_1:
+    username: chentepixtol
+    password: password
+    is_active: '1'
+    is_super_admin: '0'
+  sfGuardUser_2:
+    username: administrator
+    password: password
+    is_active: '1'
+    is_super_admin: '0'
+Perfil:
+  Perfil_1:
+    user_id: sfGuardUser_1
+    nombre: Vicente
+    apellido_paterno: Mendoza
+    apellido_materno: Moreno
+    telefono: '58775580'
+    extension_1: '12344'
+    extension_2: '21222'
+    movil: '767676676'
+    estancia: 'cubiculo 5'
+    horario: 'lunes a viernes'
+    foto: ''
+    enlace: vicentemendoza
+  Perfil_2:
+    user_id: sfGuardUser_2
+    nombre:  Administrador
+    apellido_paterno: Admin
+    apellido_materno: Admin
+    telefono: '57'
+    extension_1: '12344'
+    extension_2: '21222'
+    movil: '767676676'
+    estancia: 'laboratorio 5'
+    horario: 'lunes a viernes 7am a 1pm'
+    foto: ''
+    enlace: administrador
+Banner:
+  Banner_1:
+    titulo:  'Banner Lado Derecho'
+    descripcion: 'tamaño XxY'
+  Banner_2:
+    titulo:   'Banner Lado Izquierdo'
+    descripcion:  'tamaño XxY'
+  Banner_3:
+    titulo:   'Banner Central'
+    descripcion:  'tamaño XxY'
